@@ -97,7 +97,7 @@ get_header(); ?>
 
 <section>
 
-    <div class="container-fluid">
+    <div class="container-fluid mb-3">
         <div class="row">
 
             <?php echo do_shortcode('[metaslider id="388"]'); ?>
@@ -110,7 +110,7 @@ get_header(); ?>
 
 <section>
 
-    <div class="container">
+    <div class="container mb-3">
         <div class="row">
 
             <?php while (have_posts()) : the_post(); ?>
@@ -131,7 +131,7 @@ get_header(); ?>
 
 
 
-    <div class="container">
+    <div class="container mb-3">
         <div class="row">
 
             <div class="col-sm-4">
@@ -171,11 +171,11 @@ get_header(); ?>
 
 
 <section>
-    <div class="container">
+    <div class="container mb-3">
 
         <div class="fw-heading pt-md-3 fw-heading-h1 ">
             <h1 class="bottom-border">Подпишитесь на нас в Instagram</h1>
-            <div class="fw-special-subtitle pt-md-2">фото отчеты наших покупателей</div>
+            <div class="fw-special-subtitle pt-md-2 mb-3">фото отчеты наших покупателей</div>
         </div>
 
         <div class="row">
@@ -201,7 +201,7 @@ get_header(); ?>
 
 
 <section>
-    <div class="container">
+    <div class="container mb-3">
         <h1 class="bottom-border">Обзоры</h1>
 
         <div class="row">
