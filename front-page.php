@@ -174,7 +174,7 @@ get_header(); ?>
     <div class="container mb-3">
 
         <div class="fw-heading pt-md-3 fw-heading-h1 ">
-            <h1 class="bottom-border">Подпишитесь на нас в Instagram</h1>
+            <h3 class="bottom-border">Подпишитесь на нас в Instagram</h3>
             <div class="fw-special-subtitle pt-md-2 mb-3">фото отчеты наших покупателей</div>
         </div>
 
@@ -202,7 +202,7 @@ get_header(); ?>
 
 <section>
     <div class="container mb-3">
-        <h1 class="bottom-border">Обзоры</h1>
+        <h3 class="bottom-border">Обзоры</h3>
 
         <div class="row">
 
