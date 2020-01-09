@@ -49,6 +49,141 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 
                     <div class="row">
+	<div class="col-sm-4">
+    <div class="container__cat ">
+
+
+
+    <div class="parent__cat">
+
+
+
+        <a href="test" target="_blank" class="a__container">
+
+           <div class="child__cat">  <span class="child_child">Мужское</span></div>
+
+            <img class="parent_cat_img" src="//localhost/alex/wp-content/uploads/2019/10/home_cat2-4-1.png" alt="">
+
+
+        </a>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+</div>
+<div class="col-sm-4">
+    <div class="container__cat ">
+
+
+
+    <div class="parent__cat">
+
+
+
+        <a href="test" target="_blank" class="a__container">
+
+           <div class="child__cat">  <span class="child_child">Женское</span></div>
+
+            <img class="parent_cat_img" src="//localhost/alex/wp-content/uploads/2019/10/home_cat2-6.png" alt="">
+
+
+        </a>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+</div>
+<div class="col-sm-4">
+    <div class="container__cat ">
+
+
+
+    <div class="parent__cat">
+
+
+
+        <a href="test" target="_blank" class="a__container">
+
+           <div class="child__cat">  <span class="child_child">Акссесуары</span></div>
+
+            <img class="parent_cat_img" src="//localhost/alex/wp-content/uploads/2019/10/home_cat2-5.png" alt="">
+
+
+        </a>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+</div>
+<div class="col-sm-12 p_half">
+    </div>
+<div class="col-sm-12 w-100">
+    <div class="fw-heading pt-md-3 fw-heading-h1 ">
+		<h1 class="bottom-border">Подпишитесь на нас в Instagram</h1>			<div class="fw-special-subtitle pt-md-2">фото отчеты наших покупателей</div>
+	</div>
+</div>
+<div class="col-sm-4 mb-lg-3 col-6">
+    <img src="//localhost/alex/wp-content/uploads/2019/10/Rectangle-107.png" alt="//localhost/alex/wp-content/uploads/2019/10/Rectangle-107.png"></div>
+<div class="col-sm-4 mb-lg-3 col-6">
+    <img src="http://localhost/alex/wp-content/uploads/2019/10/Rectangle-104-364x364.png" alt="http://localhost/alex/wp-content/uploads/2019/10/Rectangle-104-364x364.png" width="364" height="364"></div>
+<div class="col-sm-4 mb-lg-3 col-6">
+    <img src="http://localhost/alex/wp-content/uploads/2019/10/Rectangle-105-364x364.png" alt="http://localhost/alex/wp-content/uploads/2019/10/Rectangle-105-364x364.png" width="364" height="364"></div>
+<div class="col-sm-4 mb-lg-3 col-6">
+    <img src="http://localhost/alex/wp-content/uploads/2019/10/Rectangle-106-364x364.png" alt="http://localhost/alex/wp-content/uploads/2019/10/Rectangle-106-364x364.png" width="364" height="364"></div>
+<div class="col-sm-4 mb-lg-3 col-6 d-none d-sm-block">
+    <img src="http://localhost/alex/wp-content/uploads/2019/10/4DSC_2630-364x364.jpg" alt="http://localhost/alex/wp-content/uploads/2019/10/4DSC_2630-364x364.jpg" width="364" height="364"></div>
+<div class="col-sm-4 col-6 d-none d-sm-block">
+    <img src="http://localhost/alex/wp-content/uploads/2019/10/Rectangle-108-364x364.png" alt="http://localhost/alex/wp-content/uploads/2019/10/Rectangle-108-364x364.png" width="364" height="364"></div>
+</div>
+
+
+
+                    <div class="row">
 <div class="container">
 
                         <h1 class="bottom-border">Обзоры</h1>
