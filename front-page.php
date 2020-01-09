@@ -167,14 +167,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<h1 class="bottom-border">Подпишитесь на нас в Instagram</h1>			<div class="fw-special-subtitle pt-md-2">фото отчеты наших покупателей</div>
 	</div>
 </div>
-<div class="col-sm-4 mb-lg-3 col-6">
+<div class="col-sm-4 mb-lg-3 col-6 img-fix">
     <img src="/images/69832371_155125655587645_2935203690960773491_n.jpg" ></div>
 <div class="col-sm-4 mb-lg-3 col-6">
 <img src="/images/70020432_441699703136593_1447669022560680297_n.jpg" ></div>
 <div class="col-sm-4 mb-lg-3 col-6">
 <img src="/images/70120047_401039477474774_2495156342200354028_n.jpg" ></div>
 <div class="col-sm-4 mb-lg-3 col-6">
-<img src="/images/70661029_741646412950271_2401055558717793631_n.jpg" ></div>
+<img src="/images/Rectangle-105-364x364.png" ></div>
 <div class="col-sm-4 mb-lg-3 col-6 d-none d-sm-block">
 <img src="/images/70723461_155029495594068_3872758913129475751_n.jpg" ></div>
 <div class="col-sm-4 col-6 d-none d-sm-block">
