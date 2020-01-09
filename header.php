@@ -51,7 +51,7 @@ $container = get_theme_mod('understrap_container_type');
 
                         <div class="go_home d-flex align-self-center">
                             <div class="p-2 likes"><a href="<?php echo esc_url(home_url('/wishlist')); ?>"><img class="mr-md-2 mr-2" style="width: 18px;" src="http://2ashop.kz//images/heart.svg">Избранное</a></div>
-                            <div class="p-2">
+                            <div class="p-2 d-none">
 
 
                                 <?php if (is_user_logged_in()) { ?>
