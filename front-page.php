@@ -168,7 +168,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	</div>
 </div>
 <div class="col-sm-4 mb-lg-3 col-6">
-    <img src="/images/69832371_155125655587645_2935203690960773491_n.png" ></div>
+    <img src="/images/69832371_155125655587645_2935203690960773491_n.jpg" ></div>
 <div class="col-sm-4 mb-lg-3 col-6">
     <img src="http://localhost/alex/wp-content/uploads/2019/10/Rectangle-104-364x364.png" alt="http://localhost/alex/wp-content/uploads/2019/10/Rectangle-104-364x364.png" width="364" height="364"></div>
 <div class="col-sm-4 mb-lg-3 col-6">
