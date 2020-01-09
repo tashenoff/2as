@@ -62,7 +62,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
            <div class="child__cat">  <span class="child_child">Мужское</span></div>
 
-            <img class="parent_cat_img" src="//localhost/alex/wp-content/uploads/2019/10/home_cat2-4-1.png" alt="">
+            <img class="parent_cat_img" src="images/home_cat2-4-1.png" alt="">
 
 
         </a>
@@ -99,7 +99,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
            <div class="child__cat">  <span class="child_child">Женское</span></div>
 
-            <img class="parent_cat_img" src="//localhost/alex/wp-content/uploads/2019/10/home_cat2-6.png" alt="">
+           <img class="parent_cat_img" src="images/home_cat2-6.png" alt="">
 
 
         </a>
@@ -136,7 +136,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
            <div class="child__cat">  <span class="child_child">Акссесуары</span></div>
 
-            <img class="parent_cat_img" src="//localhost/alex/wp-content/uploads/2019/10/home_cat2-5.png" alt="">
+           <img class="parent_cat_img" src="images/home_cat2-5.png" alt="">
 
 
         </a>
@@ -170,15 +170,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="col-sm-4 mb-lg-3 col-6">
     <img src="/images/69832371_155125655587645_2935203690960773491_n.jpg" ></div>
 <div class="col-sm-4 mb-lg-3 col-6">
-    <img src="http://localhost/alex/wp-content/uploads/2019/10/Rectangle-104-364x364.png" alt="http://localhost/alex/wp-content/uploads/2019/10/Rectangle-104-364x364.png" width="364" height="364"></div>
+<img src="/images/70020432_441699703136593_1447669022560680297_n.jpg" ></div>
 <div class="col-sm-4 mb-lg-3 col-6">
-    <img src="http://localhost/alex/wp-content/uploads/2019/10/Rectangle-105-364x364.png" alt="http://localhost/alex/wp-content/uploads/2019/10/Rectangle-105-364x364.png" width="364" height="364"></div>
+<img src="/images/70120047_401039477474774_2495156342200354028_n.jpg" ></div>
 <div class="col-sm-4 mb-lg-3 col-6">
-    <img src="http://localhost/alex/wp-content/uploads/2019/10/Rectangle-106-364x364.png" alt="http://localhost/alex/wp-content/uploads/2019/10/Rectangle-106-364x364.png" width="364" height="364"></div>
+<img src="/images/70661029_741646412950271_2401055558717793631_n.jpg" ></div>
 <div class="col-sm-4 mb-lg-3 col-6 d-none d-sm-block">
-    <img src="http://localhost/alex/wp-content/uploads/2019/10/4DSC_2630-364x364.jpg" alt="http://localhost/alex/wp-content/uploads/2019/10/4DSC_2630-364x364.jpg" width="364" height="364"></div>
+<img src="/images/70723461_155029495594068_3872758913129475751_n.jpg" ></div>
 <div class="col-sm-4 col-6 d-none d-sm-block">
-    <img src="http://localhost/alex/wp-content/uploads/2019/10/Rectangle-108-364x364.png" alt="http://localhost/alex/wp-content/uploads/2019/10/Rectangle-108-364x364.png" width="364" height="364"></div>
+<img src="/images/70996803_436689306954584_2581364379230363217_n.jpg" ></div>
 </div>
 
 
