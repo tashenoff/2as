@@ -43,12 +43,14 @@ $container = get_theme_mod('understrap_container_type');
 
 
                         <div class="p-2 logo">
-                            <h1> <img style="width: 50px;" src="http://2ashop.kz//images/logo.svg" alt="" srcset=""></h1>
+                            <img style="width: 50px;" src="http://2ashop.kz//images/logo.svg" alt="" srcset="">
                         </div>
-                        <div class="p-2 flex-grow-1 align-self-center"><span>По всем вопросам: 8888888</span> </div>
+                        <div class="p-2 flex-grow-1 align-self-center">
+                            <h5 style="margin-top: 3px;">2ashop.kz</h5><span class="d-lg-block d-none">По всем вопросам: 8888888</span>
+                        </div>
 
                         <div class="go_home d-flex align-self-center">
-                            <div class="p-2 likes"><a href="<?php echo esc_url(home_url('/wishlist')); ?>">Избранное</a></div>
+                            <div class="p-2 likes"><a href="<?php echo esc_url(home_url('/wishlist')); ?>"><img class="mr-md-2 mr-2" style="width: 18px;" src="http://2ashop.kz//images/heart.svg">Избранное</a></div>
                             <div class="p-2">
 
 
@@ -79,7 +81,7 @@ $container = get_theme_mod('understrap_container_type');
                                     <a class="lrm-login lrm-hide-if-logged-in" href="#login">
                                         войти
                                     </a>
-                                    <a class="lrm-hide-if-logged-in" href="#">111</a>
+                                    <!-- <a class="lrm-hide-if-logged-in" href="#">111</a> -->
 
 
 
