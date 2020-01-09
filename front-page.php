@@ -218,7 +218,7 @@ get_header(); ?>
                 setup_postdata($post);
 
             ?>
-                <div class="col-lg-4 p-2">
+                <div class="col-lg-4 col-6 p-2">
 
 
                     <div class="parent__post">
