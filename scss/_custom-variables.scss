@@ -1,0 +1,45 @@
+
+
+
+
+
+$primary:  #1D1E24;
+$secondary: #00E291;
+
+$grid-gutter-width:           1rem;
+
+$theme-colors: (
+        primary: $primary,
+        secondary: $secondary
+
+);
+
+
+
+
+
+$border-width:                2px !default;
+$border-radius:               0rem !default;
+
+
+
+
+@import "functions";
+@import "variables";
+
+
+$headings-font-weight:        500 ;
+$headings-color: $gray-700;
+
+
+
+
+
+
+
+// Set a specific jump point for requesting color jumps
+$theme-color-interval:      8% !default;
+
+// The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
+$yiq-contrasted-threshold:  150 !default;
+

@@ -1,0 +1,195 @@
+
+
+li.woocommerce-widget-layered-nav-list__item{
+
+    padding: 10px 0px 10px 0px!important;
+    border-bottom: 1px solid #c1bebe;
+}
+
+span.count{
+    float: right;
+
+}
+
+
+
+
+
+.woocommerce-variation-description{
+    display: none;
+}
+
+
+ul.product-categories{
+    padding: 0px 1rem;
+}
+
+
+.widget{
+
+    padding: 1rem;
+    margin-bottom: 2rem;
+
+}
+
+
+.widget-title{
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+.woocommerce ul.products, .woocommerce-page ul.products{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.woocommerce ul.products li.product{
+    display: flex;
+    flex-direction: column;
+}
+
+.woocommerce ul.products li.product .woocommerce-loop-product__link{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.woocommerce ul.products li.product .button{
+    align-self: flex-start;
+}
+
+
+.woocommerce ul.products li.product .woocommerce-loop-product__title{
+    flex-grow: 1;
+}
+
+
+
+
+.btn-outline-primary.disabled, .btn-outline-primary:disabled{
+    border: 2px solid gray;
+}
+
+.ignorshik{
+    display: inline-block;
+    color:#fff;
+}
+.ignorshik:after {
+    content: '';
+    display: inline-block;
+    vertical-align: top;
+    height: 4px;
+    width: 16%;
+    background: white;
+    margin-top: 1.75rem;
+}
+
+
+
+
+
+.ignorshik_h1{
+    display: inline-block;
+    text-transform: uppercase;
+
+
+}
+.ignorshik_h1:after {
+    content: '';
+    display: inline-block;
+    vertical-align: top;
+    height: 4px;
+    width: 16%;
+    background: gray;
+    margin-top: 1.75rem;
+}
+
+
+
+
+
+
+
+
+
+.list-group-item{
+    background: none;
+    padding: .75rem 0rem;
+    border: none;
+}
+
+
+
+.breadcrumb{
+    padding: .75rem 0rem;
+}
+
+.navbar_footer{
+
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 0rem;
+}
+
+
+
+
+.navbar{
+    padding: .5rem 0rem;
+}
+
+
+
+.term-description{
+    display: none;
+}
+
+.woocommerce-products-header{
+    display: none;
+}
+
+
+.woocommerce-info{
+    border-top: 0px
+}
+
+
+
+.heros{
+
+    width: 100%;
+    background-size: cover!important;
+    background-position: 50% 68%!important;
+    height: 448px;
+    background-repeat: no-repeat!important;
+}
+
+
+
+.heros-2{
+
+
+}
+
+
+
+
+
+
+
+
+.custom_bc, .mega-menu-link{
+    letter-spacing: 0.44px;
+
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+
+

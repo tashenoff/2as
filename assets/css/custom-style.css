@@ -1,0 +1,26 @@
+.icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-size: cover; }
+
+.facebook {
+  background-image: url(../img/face_hover.svg); }
+
+.facebook:hover,
+.facebook:focus {
+  background-image: url(../img/face.svg); }
+
+.googles {
+  background-image: url(../img/google_hover.svg); }
+
+.googles:hover,
+.googles:focus {
+  background-image: url(../img/google.svg); }
+
+.pin {
+  background-image: url(../img/pin_hover.svg); }
+
+.pin:hover,
+.pin:focus {
+  background-image: url(../img/pin.svg); }
