@@ -1,79 +1,3 @@
-<style>
-    .a__container {
-
-        height: 100%;
-        width: 100%;
-
-
-
-
-    }
-
-
-    .container__cat {
-
-        position: relative;
-
-
-
-
-
-
-    }
-
-
-    .parent__cat {
-
-        width: 100%;
-        height: 100%;
-
-        overflow: hidden;
-
-    }
-
-    .parent_cat_img {
-
-
-        -moz-transition: all 1s ease-out;
-        -o-transition: all 1s ease-out;
-        -webkit-transition: all 1s ease-out;
-        width: 100%;
-    }
-
-
-
-    .parent_cat_img:hover {
-
-        -webkit-transform: scale(1.1);
-        -moz-transform: scale(1.1);
-        -o-transform: scale(1.1);
-
-
-
-    }
-
-
-
-
-    .child__cat {
-
-
-        position: absolute;
-        bottom: 50%;
-        display: block;
-        z-index: 2;
-        width: 100%;
-        height: 40px;
-        text-align: center;
-        color: #fff;
-    }
-
-    .child_child {
-        padding: 20px;
-        background-color: #000;
-    }
-</style>
-
 <?php
 
 /**
@@ -170,35 +94,6 @@ get_header(); ?>
 </section>
 
 
-<section>
-    <div class="container mb-3">
-
-        <div class="fw-heading pt-md-3 fw-heading-h1 ">
-            <h3 class="bottom-border">Подпишитесь на нас в Instagram</h3>
-            <div class="fw-special-subtitle pt-md-2 mb-3">фото отчеты наших покупателей</div>
-        </div>
-
-        <div class="row">
-
-            <div class="col-sm-4 mb-lg-3 col-6 mb-3 img-fix">
-                <img src="http://2ashop.kz/images/69832371_155125655587645_2935203690960773491_n.jpg"></div>
-            <div class="col-sm-4 mb-lg-3 col-6">
-                <img src="http://2ashop.kz/images/70020432_441699703136593_1447669022560680297_n.jpg"></div>
-            <div class="col-sm-4 mb-lg-3 col-6 mb-3">
-                <img src="http://2ashop.kz/images/70120047_401039477474774_2495156342200354028_n.jpg"></div>
-            <div class="col-sm-4 mb-lg-3 col-6">
-                <img src="http://2ashop.kz/images/Rectangle-105-364x364.png"></div>
-            <div class="col-sm-4 mb-lg-3 col-6 d-none d-sm-block">
-                <img src="http://2ashop.kz/images/70723461_155029495594068_3872758913129475751_n.jpg"></div>
-            <div class="col-sm-4 col-6 d-none d-sm-block">
-                <img src="http://2ashop.kz/images/70996803_436689306954584_2581364379230363217_n.jpg"></div>
-        </div>
-    </div>
-    </div>
-</section>
-
-
-
 
 <section>
     <div class="container mb-3">
@@ -264,6 +159,37 @@ get_header(); ?>
         </div>
     </div>
 </section>
+
+
+
+<section>
+    <div class="container mb-3">
+
+        <div class="fw-heading pt-md-3 fw-heading-h1 ">
+            <h3 class="bottom-border">Подпишитесь на нас в Instagram</h3>
+            <div class="fw-special-subtitle pt-md-2 mb-3">фото отчеты наших покупателей</div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-sm-4 mb-lg-3 col-6 mb-3 img-fix">
+                <img src="http://2ashop.kz/images/69832371_155125655587645_2935203690960773491_n.jpg"></div>
+            <div class="col-sm-4 mb-lg-3 col-6">
+                <img src="http://2ashop.kz/images/70020432_441699703136593_1447669022560680297_n.jpg"></div>
+            <div class="col-sm-4 mb-lg-3 col-6 mb-3">
+                <img src="http://2ashop.kz/images/70120047_401039477474774_2495156342200354028_n.jpg"></div>
+            <div class="col-sm-4 mb-lg-3 col-6">
+                <img src="http://2ashop.kz/images/Rectangle-105-364x364.png"></div>
+            <div class="col-sm-4 mb-lg-3 col-6 d-none d-sm-block">
+                <img src="http://2ashop.kz/images/70723461_155029495594068_3872758913129475751_n.jpg"></div>
+            <div class="col-sm-4 col-6 d-none d-sm-block">
+                <img src="http://2ashop.kz/images/70996803_436689306954584_2581364379230363217_n.jpg"></div>
+        </div>
+    </div>
+    </div>
+</section>
+
+
 
 
 <?php get_footer();

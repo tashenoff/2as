@@ -14,7 +14,7 @@ defined('ABSPATH') || exit;
 /**
  * Widget price filter class.
  */
-class WC_Widget_Price_Filter extends WC_Widget
+class Custom_WC_Widget_Price_Filter extends WC_Widget
 {
 
 	/**
@@ -130,9 +130,11 @@ class WC_Widget_Price_Filter extends WC_Widget
 				<div class="price_slider_amount" data-step="' . esc_attr($step) . '">
 					<input type="text" id="min_price" name="min_price" value="' . esc_attr($current_min_price) . '" data-min="' . esc_attr($min_price) . '" placeholder="' . esc_attr__('Min price', 'woocommerce') . '" />
 					<input type="text" id="max_price" name="max_price" value="' . esc_attr($current_max_price) . '" data-max="' . esc_attr($max_price) . '" placeholder="' . esc_attr__('Max price', 'woocommerce') . '" />
-					<button type="submit" class="button">' . esc_html__('Filter', 'woocommerce') . '</button>
-					<div class="price_label" style="display:none;">
-						' . esc_html__('Price:', 'woocommerce') . ' <span class="from"></span> &mdash; <span class="to"></span>
+					<button style="float: none;
+					width: 100%;
+					margin: 10px 0px 10px 0px;"type="submit" class="button">' . esc_html__('Filter', 'woocommerce') . '</button>
+					<div style="    text-align: center;"  class="price_label"><b>
+						' . esc_html__('Price:', 'woocommerce') . ' </b><span class="from"></span> &mdash; <span class="to"></span>
 					</div>
 					' . wc_query_string_form_fields(null, array('min_price', 'max_price', 'paged'), '', true) . '
 					<div class="clear"></div>

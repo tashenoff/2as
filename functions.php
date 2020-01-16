@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Understrap functions and definitions
  *
@@ -6,7 +7,7 @@
  */
 
 // Exit if accessed directly.
-defined( 'ABSPATH' ) || exit;
+defined('ABSPATH') || exit;
 
 $understrap_includes = array(
     '/theme-settings.php',                  // Initialize theme default settings.
@@ -26,10 +27,10 @@ $understrap_includes = array(
     '/deprecated.php',                      // Load deprecated functions.
 );
 
-foreach ( $understrap_includes as $file ) {
-    $filepath = locate_template( 'inc' . $file );
-    if ( ! $filepath ) {
-        trigger_error( sprintf( 'Error locating /inc%s for inclusion', $file ), E_USER_ERROR );
+foreach ($understrap_includes as $file) {
+    $filepath = locate_template('inc' . $file);
+    if (!$filepath) {
+        trigger_error(sprintf('Error locating /inc%s for inclusion', $file), E_USER_ERROR);
     }
     require_once $filepath;
 }
@@ -47,15 +48,16 @@ function my_stylesheet()
     wp_enqueue_style('my-style2', get_stylesheet_directory_uri() . '/assets/css/old.css', false, '1.0', 'all');
     wp_enqueue_style('my-style3', get_stylesheet_directory_uri() . '/assets/css/settings.css', false, '1.0', 'all');
     wp_enqueue_style('my-style4', get_stylesheet_directory_uri() . '/assets/css/bootstrap-reboot.css', false, '1.0', 'all');
-
+    wp_enqueue_style('my-style5', get_stylesheet_directory_uri() . '/assets/css/add_new.css', false, '1.0', 'all');
 }
 
 
 
-add_action( 'wp_enqueue_scripts', 'my_scripts_method' );
-function my_scripts_method() {
-    $script_url = plugins_url( '/assets/js/ajax-login-script.js', __FILE__ );
-    wp_enqueue_script('custom-script', $script_url, array('jquery') );
+add_action('wp_enqueue_scripts', 'my_scripts_method');
+function my_scripts_method()
+{
+    $script_url = plugins_url('/assets/js/ajax-login-script.js', __FILE__);
+    wp_enqueue_script('custom-script', $script_url, array('jquery'));
 }
 
 
@@ -65,11 +67,11 @@ function my_scripts_method() {
 
 //регистрируем меню
 
-register_nav_menus( array(
-    'primary' => esc_html__( 'Primary', 'wp-bootstrap-starter' ),
-    'foo-menu' => esc_html__( 'foo-menu' ),
-    'footwo' => esc_html__( 'footwo' ),
-    'head_cat' => esc_html__( 'head_cat' ),
+register_nav_menus(array(
+    'primary' => esc_html__('Primary', 'wp-bootstrap-starter'),
+    'foo-menu' => esc_html__('foo-menu'),
+    'footwo' => esc_html__('footwo'),
+    'head_cat' => esc_html__('head_cat'),
 
 ));
 
@@ -83,7 +85,6 @@ function filter_wp_menu_args($args)
         $args['container'] = false;
         $args['items_wrap'] = '<ul class="%2$s"></li>%3$s</ul>';
         $args['menu_class'] = 'navbar-nav list-unstyled';
-
     }
 
 
@@ -91,7 +92,6 @@ function filter_wp_menu_args($args)
         $args['container'] = false;
         $args['items_wrap'] = '<ul class="%2$s"></li>%3$s</ul>';
         $args['menu_class'] = 'navbar-nav list-unstyled';
-
     }
 
 
@@ -99,7 +99,6 @@ function filter_wp_menu_args($args)
 
 
     return $args;
-
 }
 
 
@@ -154,8 +153,6 @@ function filter_nav_menu_link_attributes($atts, $item, $args, $depth)
 
     if ($args->theme_location === 'foo-menu') {
         $atts['class'] = 'nav-link';
-
-
     }
 
 
@@ -165,10 +162,6 @@ function filter_nav_menu_link_attributes($atts, $item, $args, $depth)
         if ($item->current) {
             $atts['class'] .= ' menu-link--active';
         }
-
-
-
-
     }
 
 
@@ -178,27 +171,23 @@ function filter_nav_menu_link_attributes($atts, $item, $args, $depth)
 
 
     return $atts;
-
-
-
-
 }
 
 
 
 //удаляем хлебные крошки и выподающий список из archive-product
 
-remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
-remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20 );
-remove_action( 'woocommerce_before_shop_loop' , 'woocommerce_result_count', 20 );
+remove_action('woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30);
+remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+remove_action('woocommerce_before_shop_loop', 'woocommerce_result_count', 20);
 
 //переносим табы в право
-remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10 );
-add_action( 'woocommerce_single_product_summary', 'woocommerce_output_product_data_tabs', 60 );
+remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10);
+add_action('woocommerce_single_product_summary', 'woocommerce_output_product_data_tabs', 60);
 
 
 
-remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
 
 //add_action( 'woocommerce_single_product_summary', 'woocommerce_output_product_data_tabs', 60 );
 
@@ -220,8 +209,9 @@ remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_singl
 
 //ссылка вместо кнопки
 
-add_filter( 'woocommerce_loop_add_to_cart_link', 'replacing_add_to_cart_button', 10, 2 );
-function replacing_add_to_cart_button( $button, $product  ) {
+add_filter('woocommerce_loop_add_to_cart_link', 'replacing_add_to_cart_button', 10, 2);
+function replacing_add_to_cart_button($button, $product)
+{
     $button_text = __("View product", "woocommerce");
     $button = '<span><a class="price-home" href="' . $product->get_permalink() . '">' . $button_text . '</a></span>';
 
@@ -230,25 +220,50 @@ function replacing_add_to_cart_button( $button, $product  ) {
 
 
 
+//заменил вывод категории (убрал скобки)
+
+add_action('widgets_init', 'override_woocommerce_widgets_two', 15);
+
+function override_woocommerce_widgets_two()
+{
+    // Ensure our parent class exists to avoid fatal error (thanks Wilgert!)
+
+    if (class_exists('WC_Widget_Price_Filter')) {
+
+        unregister_widget('WC_Widget_Price_Filter');
+
+        include_once('inc/class-wc-widget-price-filter.php');
+
+        register_widget('Custom_WC_Widget_Price_Filter');
+    }
+}
+
+
+
+
 
 
 //заменил вывод категории (убрал скобки)
 
-add_action( 'widgets_init', 'err_override_woocommerce_widgets', 15 );
+add_action('widgets_init', 'err_override_woocommerce_widgets', 15);
 
-function err_override_woocommerce_widgets() {
+function err_override_woocommerce_widgets()
+{
     // Ensure our parent class exists to avoid fatal error (thanks Wilgert!)
 
-    if ( class_exists( 'WC_Widget_Layered_Nav' ) ) {
+    if (class_exists('WC_Widget_Layered_Nav')) {
 
-        unregister_widget( 'WC_Widget_Layered_Nav' );
+        unregister_widget('WC_Widget_Layered_Nav');
 
-        include_once( 'inc/custom-wc-widget-layered-nav.php' );
+        include_once('inc/custom-wc-widget-layered-nav.php');
 
-        register_widget( 'Custom_WC_Widget_Layered_Nav' );
+        register_widget('Custom_WC_Widget_Layered_Nav');
     }
-
 }
+
+
+
+
 
 
 
@@ -279,15 +294,17 @@ function err_override_woocommerce_widgets() {
 // -------------
 // 1. Show Buttons
 
-add_action( 'woocommerce_before_add_to_cart_quantity', 'bbloomer_display_quantity_plus' );
+add_action('woocommerce_before_add_to_cart_quantity', 'bbloomer_display_quantity_plus');
 
-function bbloomer_display_quantity_plus() {
+function bbloomer_display_quantity_plus()
+{
     echo '<button type="button" class="btn btn-outline-primary plus" >+</button>';
 }
 
-add_action( 'woocommerce_after_add_to_cart_quantity', 'bbloomer_display_quantity_minus' );
+add_action('woocommerce_after_add_to_cart_quantity', 'bbloomer_display_quantity_minus');
 
-function bbloomer_display_quantity_minus() {
+function bbloomer_display_quantity_minus()
+{
     echo '<button type="button" class="btn btn-outline-primary minus" >-</button>';
 }
 
@@ -298,55 +315,55 @@ function bbloomer_display_quantity_minus() {
 // -------------
 // 2. Trigger jQuery script
 
-add_action( 'wp_footer', 'bbloomer_add_cart_quantity_plus_minus' );
+add_action('wp_footer', 'bbloomer_add_cart_quantity_plus_minus');
 
-function bbloomer_add_cart_quantity_plus_minus() {
+function bbloomer_add_cart_quantity_plus_minus()
+{
     // Only run this on the single product page
-    if ( ! is_product() ) return;
-    ?>
+    if (!is_product()) return;
+?>
     <script type="text/javascript">
+        jQuery(document).ready(function($) {
 
-        jQuery(document).ready(function($){
-
-            $('form.cart').on( 'click', 'button.plus, button.minus', function() {
+            $('form.cart').on('click', 'button.plus, button.minus', function() {
 
                 // Get current quantity values
-                var qty = $( this ).closest( 'form.cart' ).find( '.qty' );
-                var val   = parseFloat(qty.val());
-                var max = parseFloat(qty.attr( 'max' ));
-                var min = parseFloat(qty.attr( 'min' ));
-                var step = parseFloat(qty.attr( 'step' ));
+                var qty = $(this).closest('form.cart').find('.qty');
+                var val = parseFloat(qty.val());
+                var max = parseFloat(qty.attr('max'));
+                var min = parseFloat(qty.attr('min'));
+                var step = parseFloat(qty.attr('step'));
 
                 // Change the value if plus or minus
-                if ( $( this ).is( '.plus' ) ) {
-                    if ( max && ( max <= val ) ) {
-                        qty.val( max );
+                if ($(this).is('.plus')) {
+                    if (max && (max <= val)) {
+                        qty.val(max);
                     } else {
-                        qty.val( val + step );
+                        qty.val(val + step);
                     }
                 } else {
-                    if ( min && ( min >= val ) ) {
-                        qty.val( min );
-                    } else if ( val > 1 ) {
-                        qty.val( val - step );
+                    if (min && (min >= val)) {
+                        qty.val(min);
+                    } else if (val > 1) {
+                        qty.val(val - step);
                     }
                 }
 
             });
 
         });
-
     </script>
-    <?php
+<?php
 }
 
 
 
 
-add_filter('woocommerce_product_tabs' , 'special_nav_class' , 10 , 2);
+add_filter('woocommerce_product_tabs', 'special_nav_class', 10, 2);
 
-function special_nav_class ($tabs) {
-    if (in_array('current-menu-item', $tabs) ){
+function special_nav_class($tabs)
+{
+    if (in_array('current-menu-item', $tabs)) {
         $tabs[] = 'active ';
     }
     return $tabs;
@@ -357,29 +374,31 @@ function special_nav_class ($tabs) {
 
 // Filter except length to 35 words.
 // tn custom excerpt length
-function tn_custom_excerpt_length( $length ) {
+function tn_custom_excerpt_length($length)
+{
     return 15;
 }
-add_filter( 'excerpt_length', 'tn_custom_excerpt_length', 999 );
+add_filter('excerpt_length', 'tn_custom_excerpt_length', 999);
 
 
 
 
 
 
-function ajax_login_init(){
+function ajax_login_init()
+{
 
-    wp_register_script('ajax-login-script', get_template_directory_uri() . '/assets/js/ajax-login-script.js', array('jquery') );
+    wp_register_script('ajax-login-script', get_template_directory_uri() . '/assets/js/ajax-login-script.js', array('jquery'));
     wp_enqueue_script('ajax-login-script');
 
-    wp_localize_script( 'ajax-login-script', 'ajax_login_object', array(
-        'ajaxurl' => admin_url( 'admin-ajax.php' ),
+    wp_localize_script('ajax-login-script', 'ajax_login_object', array(
+        'ajaxurl' => admin_url('admin-ajax.php'),
         'redirecturl' => home_url(),
         'loadingmessage' => __('Sending user info, please wait...')
     ));
 
     // Enable the user with no privileges to run ajax_login() in AJAX
-    add_action( 'wp_ajax_nopriv_ajaxlogin', 'ajax_login' );
+    add_action('wp_ajax_nopriv_ajaxlogin', 'ajax_login');
 }
 
 // Execute the action only if the user isn't logged in
@@ -388,10 +407,11 @@ if (!is_user_logged_in()) {
 }
 
 
-function ajax_login(){
+function ajax_login()
+{
 
     // First check the nonce, if it fails the function will break
-    check_ajax_referer( 'ajax-login-nonce', 'security' );
+    check_ajax_referer('ajax-login-nonce', 'security');
 
     // Nonce is checked, get the POST data and sign user on
     $info = array();
@@ -399,11 +419,11 @@ function ajax_login(){
     $info['user_password'] = $_POST['password'];
     $info['remember'] = true;
 
-    $user_signon = wp_signon( $info, false );
-    if ( is_wp_error($user_signon) ){
-        echo json_encode(array('loggedin'=>false, 'message'=>__('Wrong username or password.')));
+    $user_signon = wp_signon($info, false);
+    if (is_wp_error($user_signon)) {
+        echo json_encode(array('loggedin' => false, 'message' => __('Wrong username or password.')));
     } else {
-        echo json_encode(array('loggedin'=>true, 'message'=>__('Login successful, redirecting...')));
+        echo json_encode(array('loggedin' => true, 'message' => __('Login successful, redirecting...')));
     }
 
     die();
@@ -411,22 +431,23 @@ function ajax_login(){
 
 
 
-add_action( 'woocommerce_shop_loop_item_title', 'bbloomer_display_yith_wishlist_loop', 97 );
+add_action('woocommerce_shop_loop_item_title', 'bbloomer_display_yith_wishlist_loop', 97);
 
 
 
-function bbloomer_display_yith_wishlist_loop() {
+function bbloomer_display_yith_wishlist_loop()
+{
 
-    $wshortcode= do_shortcode( "[ti_wishlists_addtowishlist]");
+    $wshortcode = do_shortcode("[ti_wishlists_addtowishlist]");
 
-    echo '<div class="wshortcode">' .$wshortcode. '</div>' ;
+    echo '<div class="wshortcode">' . $wshortcode . '</div>';
 }
 
 
 
-add_action( 'woocommerce_loop_add', 'add_class_button', 15 );
+add_action('woocommerce_loop_add', 'add_class_button', 15);
 
-function add_class_button() {
-echo '<div class="lola">';
-
+function add_class_button()
+{
+    echo '<div class="lola">';
 }
