@@ -46,7 +46,7 @@ $container = get_theme_mod('understrap_container_type');
                             <img style="width: 50px;" src="http://2ashop.kz//images/logo.svg" alt="" srcset="">
                         </div>
                         <div class="p-2 flex-grow-1 align-self-center">
-                            <h5 style="margin-top: 3px;"><b style="color:yellow;">II</b>ashop.kz</h5><span class="d-lg-block d-none">По всем вопросам: 8888888</span>
+                            <h5 style="margin-top: 3px;">2ashop.kz</h5><span class="d-lg-block d-none">По всем вопросам: 8888888</span>
                         </div>
 
                         <div class="go_home d-flex align-self-center">

@@ -1,19 +1,19 @@
 .woocommerce .widget_price_filter .ui-slider .ui-slider-range {
-  background-color: yellow !important;
+  background-color: #c8fe2a !important;
 }
 
 .woocommerce nav.woocommerce-pagination ul li span.current {
-  background-color: yellow !important;
+  background-color: #c8fe2a !important;
 }
 
 .woocommerce nav.woocommerce-pagination ul li a:focus,
 .woocommerce nav.woocommerce-pagination ul li a:hover,
 .woocommerce nav.woocommerce-pagination ul li span.currentP {
-  background-color: yellow !important;
+  background-color: #c8fe2a !important;
 }
 
 .price-home:hover {
-  background-color: yellow !important;
+  background-color: #c8fe2a !important;
   cursor: pointer;
   text-decoration: underline !important;
 }
@@ -65,25 +65,26 @@
 
 .btn-secondary {
   color: #000 !important;
-  background-color: yellow !important;
+  background-color: #c8fe2a !important;
 }
 
 .btn-secondary:hover {
   color: #000;
-  background-color: yellow !important;
+  background-color: #c8fe2a !important;
   border-color: #000;
 }
 
 .btn-secondary {
   color: #fff;
-  background-color: yellow !important;
-  border-color: yellow;
+  background-color: #c8fe2a !important;
+  border-color: #c8fe2a;
 }
 
 .icon-bottom:hover circle {
-  stroke: yellow;
+  stroke: #c8fe2a;
 }
 
 .icon-bottom:hover {
-  fill: yellow;
+  fill: #c8fe2a;
 }
+
