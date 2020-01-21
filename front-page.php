@@ -62,7 +62,7 @@ get_header(); ?>
 
                 <div class="parent__cat mb-2">
                     <a href="test" target="_blank" class="a__container">
-                        <div class="child__cat"> <span class="child_child">Мужское</span></div>
+                       
                         <img class="parent_cat_img" src="http://2ashop.kz/images/02.jpg" alt="">
                     </a>
                 </div>
@@ -74,7 +74,7 @@ get_header(); ?>
             <div class="col-sm-4">
                 <div class="parent__cat  mb-2">
                     <a href="test" target="_blank" class="a__container">
-                        <div class="child__cat"> <span class="child_child">Женское</span></div>
+                       
                         <img class="parent_cat_img" src="http://2ashop.kz/images/03.jpg" alt="">
                     </a>
                 </div>
@@ -84,7 +84,7 @@ get_header(); ?>
             <div class="col-sm-4">
                 <div class="parent__cat  mb-2">
                     <a href="test" target="_blank" class="a__container">
-                        <div class="child__cat"> <span class="child_child">Акссесуары</span></div>
+                        
                         <img class="parent_cat_img" src="http://2ashop.kz/images/01.jpg" alt="">
                     </a>
                 </div>
