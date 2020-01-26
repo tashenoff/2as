@@ -87,3 +87,35 @@
 .icon-bottom:hover {
   fill: #c8fe2a;
 }
+
+
+
+.woo_amc_footer {
+  background-color: #000 !important;
+}
+
+
+.woo_amc_container_side .woo_amc_center {
+  max-width: 100% !important;
+}
+
+
+.woo_amc_item_price_label {
+  display: none !important;
+}
+
+.woocommerce-Price-amount {
+  padding: 0px !important;
+}
+
+.woo_amc_item_title a {
+  color: #000 !important;
+}
+
+.woocommerce-Price-amount {
+  color: #fff;
+}
+
+.woo_amc_footer_lines .woo_amc_value {
+  margin-left: 0px !important;
+}
