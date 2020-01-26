@@ -119,3 +119,14 @@
 .woo_amc_footer_lines .woo_amc_value {
   margin-left: 0px !important;
 }
+
+
+.woo_amc_footer_link {
+  font-size: 18px;
+  color: #ffffff;
+  display: block;
+  border: 1px solid white;
+  text-align: center !important;
+  margin: 16px;
+  padding: 6px;
+}
