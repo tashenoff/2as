@@ -139,3 +139,9 @@
 .woocommerce-Price-amount {
   color: black !important;
 }
+
+
+.woocommerce ul.products li.product .price {
+  text-align: left;
+  margin: 20px;
+}
