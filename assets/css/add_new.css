@@ -133,9 +133,9 @@
 
 
 .woocommerce-Price-amount {
-  color: black;
+  color: black !important;
 }
 
 .woocommerce-Price-amount {
-  color: #1d1e24;
+  color: black !important;
 }
